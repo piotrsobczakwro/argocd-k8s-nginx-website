@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="expGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c73650;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Trophy/award representing experience -->
+  <ellipse cx="100" cy="160" rx="40" ry="10" fill="#1a1a2e" opacity="0.3"/>
+  <rect x="85" y="130" width="30" height="30" fill="url(#expGrad)"/>
+  <path d="M 70 130 L 85 130 L 85 100 L 70 100 Z" fill="url(#expGrad)"/>
+  <path d="M 115 130 L 130 130 L 130 100 L 115 100 Z" fill="url(#expGrad)"/>
+  <path d="M 70 100 Q 70 70 100 70 Q 130 70 130 100" fill="none" stroke="url(#expGrad)" stroke-width="8"/>
+  <circle cx="100" cy="70" r="30" fill="url(#expGrad)"/>
+  <text x="100" y="82" font-size="28" font-weight="bold" fill="#fff" text-anchor="middle">15+</text>
+  <!-- Star for quality -->
+  <g transform="translate(100, 40)">
+    <polygon points="0,-12 3,-4 12,-4 5,2 8,10 0,5 -8,10 -5,2 -12,-4 -3,-4" fill="#FFD700"/>
+  </g>
+</svg>
