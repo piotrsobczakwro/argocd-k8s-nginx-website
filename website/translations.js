@@ -48,6 +48,10 @@ const translations = {
         contact_hours_mon_fri: "Mon - Fri: 8:00 AM - 6:00 PM",
         contact_hours_sat: "Saturday: 9:00 AM - 3:00 PM",
         contact_hours_sun: "Sunday: Closed",
+        contact_map_title: "Find Us",
+        contact_map_view_larger: "View Larger Map",
+        contact_map_get_directions: "Get Directions",
+        contact_map_instructions: "Use the map to view our location. Click \"Get Directions\" to open routing in Google Maps or OpenStreetMap.",
         
         // Footer
         footer_copyright: "© 2026 AutoPro Workshop. All rights reserved."
@@ -100,6 +104,10 @@ const translations = {
         contact_hours_mon_fri: "Pon - Pt: 8:00 - 18:00",
         contact_hours_sat: "Sobota: 9:00 - 15:00",
         contact_hours_sun: "Niedziela: Nieczynne",
+        contact_map_title: "Znajdź nas",
+        contact_map_view_larger: "Zobacz większą mapę",
+        contact_map_get_directions: "Uzyskaj wskazówki",
+        contact_map_instructions: "Użyj mapy, aby zobaczyć naszą lokalizację. Kliknij \"Uzyskaj wskazówki\", aby otworzyć routing w Google Maps lub OpenStreetMap.",
         
         // Footer
         footer_copyright: "© 2026 AutoPro Workshop. Wszelkie prawa zastrzeżone."
