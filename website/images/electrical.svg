@@ -13,5 +13,5 @@
   <rect x="40" y="140" width="35" height="10" fill="#1a1a2e"/>
   <rect x="125" y="140" width="35" height="10" fill="#1a1a2e"/>
   <text x="57" y="165" font-size="24" font-weight="bold" fill="#e94560">+</text>
-  <text x="142" y="165" font-size="30" font-weight="bold" fill="#1a1a2e">−</text>
+  <text x="142" y="165" font-size="30" font-weight="bold" fill="#1a1a2e">-</text>
 </svg>
