@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="acGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c73650;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Snowflake for AC -->
+  <g transform="translate(70, 80)">
+    <line x1="0" y1="-30" x2="0" y2="30" stroke="#4da6ff" stroke-width="6"/>
+    <line x1="-26" y1="-15" x2="26" y2="15" stroke="#4da6ff" stroke-width="6"/>
+    <line x1="-26" y1="15" x2="26" y2="-15" stroke="#4da6ff" stroke-width="6"/>
+    <circle cx="0" cy="0" r="8" fill="#4da6ff"/>
+  </g>
+  <!-- Flame for heating -->
+  <g transform="translate(130, 120)">
+    <path d="M 0,-40 Q -15,-20 -10,0 Q -15,10 0,20 Q 15,10 10,0 Q 15,-20 0,-40" fill="url(#acGrad)"/>
+    <path d="M 0,-25 Q -8,-15 -5,0 Q -8,5 0,10 Q 8,5 5,0 Q 8,-15 0,-25" fill="#fff" opacity="0.7"/>
+  </g>
+</svg>
