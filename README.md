@@ -27,6 +27,17 @@ This project demonstrates how to deploy a static website to a Kubernetes cluster
 └── README.md           # This file
 ```
 
+## Resource Limits
+
+The deployment is configured with resource limits to ensure efficient resource usage:
+
+- **CPU Limit**: 200m (0.2 CPU cores per container)
+- **CPU Request**: 100m (0.1 CPU cores guaranteed)
+- **Memory Limit**: 128Mi (128 MiB per container)
+- **Memory Request**: 64Mi (64 MiB guaranteed)
+
+These limits are suitable for serving a static website with Nginx Alpine, ensuring the application remains performant while limiting resource consumption.
+
 ## Deployment Options
 
 ### Option 1: Using ArgoCD (Recommended)
