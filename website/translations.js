@@ -51,6 +51,8 @@ const translations = {
         contact_map_title: "Find Us",
         contact_map_view_larger: "View Larger Map",
         contact_map_get_directions: "Get Directions",
+        contact_map_google_maps: "Google Maps",
+        contact_map_openstreetmap: "OpenStreetMap",
         contact_map_instructions: "Use the map to view our location. Click \"Get Directions\" to open routing in Google Maps or OpenStreetMap.",
         
         // Footer
@@ -107,6 +109,8 @@ const translations = {
         contact_map_title: "Znajdź nas",
         contact_map_view_larger: "Zobacz większą mapę",
         contact_map_get_directions: "Uzyskaj wskazówki",
+        contact_map_google_maps: "Google Maps",
+        contact_map_openstreetmap: "OpenStreetMap",
         contact_map_instructions: "Użyj mapy, aby zobaczyć naszą lokalizację. Kliknij \"Uzyskaj wskazówki\", aby otworzyć routing w Google Maps lub OpenStreetMap.",
         
         // Footer
