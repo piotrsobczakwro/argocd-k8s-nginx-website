@@ -314,6 +314,46 @@ body {
     outline-offset: 2px;
 }
 
+.directions-menu {
+    position: relative;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.directions-menu[hidden] {
+    display: none;
+}
+
+.directions-option {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #1a1a2e;
+    background: #f8f9fa;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.directions-option:hover,
+.directions-option:focus {
+    background: #e94560;
+    color: #fff;
+    border-color: #e94560;
+    outline: none;
+}
+
 .map-instructions {
     background: #fff;
     padding: 15px 20px;
