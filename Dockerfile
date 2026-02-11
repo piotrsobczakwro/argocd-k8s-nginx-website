@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM nginx:1.27-alpine
 
 # Copy website files to nginx html directory
 COPY website/ /usr/share/nginx/html/
