@@ -119,6 +119,35 @@
                         <p data-i18n="contact_hours_sun">Sunday: Closed</p>
                     </div>
                 </div>
+                <div class="map-container">
+                    <h3 data-i18n="contact_map_title">Find Us</h3>
+                    <div class="map-wrapper">
+                        <iframe 
+                            id="map-frame"
+                            width="100%" 
+                            height="450" 
+                            frameborder="0" 
+                            scrolling="no" 
+                            marginheight="0" 
+                            marginwidth="0" 
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=17.030%2C51.100%2C17.047%2C51.116&layer=mapnik&marker=51.1079%2C17.0385"
+                            style="border-radius: 8px;"
+                            title="Map showing AutoPro Workshop location"
+                            aria-label="Interactive map showing AutoPro Workshop location at ul. Mechaników 12, 50-200 Wrocław, Poland">
+                        </iframe>
+                    </div>
+                    <div class="map-controls">
+                        <a href="https://www.openstreetmap.org/?mlat=51.1079&mlon=17.0385#map=16/51.1079/17.0385" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="map-btn"
+                           data-i18n="contact_map_view_larger">View Larger Map</a>
+                        <button class="map-btn map-btn-primary" id="get-directions-btn" data-i18n="contact_map_get_directions">Get Directions</button>
+                    </div>
+                    <div class="map-instructions">
+                        <p data-i18n="contact_map_instructions">Use the map to view our location. Click "Get Directions" to open routing in Google Maps or OpenStreetMap.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -128,6 +157,35 @@
             <p data-i18n="footer_copyright">&copy; 2026 AutoPro Workshop. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Map functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const getDirectionsBtn = document.getElementById('get-directions-btn');
+            
+            if (getDirectionsBtn) {
+                getDirectionsBtn.addEventListener('click', function() {
+                    const lang = langSwitcher ? langSwitcher.getCurrentLanguage() : 'en';
+                    const workshopAddress = 'ul. Mechaników 12, 50-200 Wrocław, Poland';
+                    
+                    // Show options dialog
+                    const message = lang === 'pl' 
+                        ? 'Wybierz aplikację do nawigacji:\n\n1 - Google Maps\n2 - OpenStreetMap\n\nWpisz 1 lub 2:'
+                        : 'Choose navigation app:\n\n1 - Google Maps\n2 - OpenStreetMap\n\nEnter 1 or 2:';
+                    
+                    const choice = prompt(message);
+                    
+                    if (choice === '1') {
+                        // Google Maps directions
+                        window.open(`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(workshopAddress)}`, '_blank');
+                    } else if (choice === '2') {
+                        // OpenStreetMap directions
+                        window.open(`https://www.openstreetmap.org/directions?to=51.1079%2C17.0385`, '_blank');
+                    }
+                });
+            }
+        });
+    </script>
 
 </body>
 </html>
