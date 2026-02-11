@@ -11,125 +11,130 @@ data:
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AutoPro Workshop - Professional Car Service &amp; Repair</title>
         <link rel="stylesheet" href="style.css">
+        <script src="translations.js"></script>
     </head>
     <body>
-
+    
         <nav class="navbar">
             <div class="nav-container">
                 <div class="logo">&#128295; AutoPro Workshop</div>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                    <li><a href="#about" data-i18n="nav_about">About</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
                 </ul>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="en" aria-label="Switch to English">ENG</button>
+                    <button class="lang-btn" data-lang="pl" aria-label="Switch to Polish">PL</button>
+                </div>
             </div>
         </nav>
-
+    
         <section id="home" class="hero">
             <div class="hero-content">
-                <h1>Professional Car Service &amp; Repair</h1>
-                <p>Trusted by hundreds of drivers. We keep your car running at its best.</p>
-                <a href="#contact" class="btn">Book an Appointment</a>
+                <h1 data-i18n="hero_title">Professional Car Service &amp; Repair</h1>
+                <p data-i18n="hero_subtitle">Trusted by hundreds of drivers. We keep your car running at its best.</p>
+                <a href="#contact" class="btn" data-i18n="hero_button">Book an Appointment</a>
             </div>
         </section>
-
+    
         <section id="services" class="services">
             <div class="container">
-                <h2>Our Services</h2>
+                <h2 data-i18n="services_title">Our Services</h2>
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="service-icon">&#128736;</div>
-                        <h3>Engine Diagnostics</h3>
-                        <p>Advanced computer diagnostics to quickly identify and resolve engine issues.</p>
+                        <h3 data-i18n="service_diagnostics_title">Engine Diagnostics</h3>
+                        <p data-i18n="service_diagnostics_desc">Advanced computer diagnostics to quickly identify and resolve engine issues.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">&#9881;</div>
-                        <h3>General Repairs</h3>
-                        <p>Brake service, suspension, exhaust systems, and complete mechanical repairs.</p>
+                        <h3 data-i18n="service_repairs_title">General Repairs</h3>
+                        <p data-i18n="service_repairs_desc">Brake service, suspension, exhaust systems, and complete mechanical repairs.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">&#128663;</div>
-                        <h3>Oil &amp; Filter Change</h3>
-                        <p>Regular maintenance to extend your engine life and ensure peak performance.</p>
+                        <h3 data-i18n="service_oil_title">Oil &amp; Filter Change</h3>
+                        <p data-i18n="service_oil_desc">Regular maintenance to extend your engine life and ensure peak performance.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">&#9889;</div>
-                        <h3>Electrical Systems</h3>
-                        <p>Battery checks, alternator repairs, wiring diagnostics, and lighting services.</p>
+                        <h3 data-i18n="service_electrical_title">Electrical Systems</h3>
+                        <p data-i18n="service_electrical_desc">Battery checks, alternator repairs, wiring diagnostics, and lighting services.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">&#10052;</div>
-                        <h3>AC &amp; Heating</h3>
-                        <p>Climate control repair, refrigerant recharge, and heating system service.</p>
+                        <h3 data-i18n="service_ac_title">AC &amp; Heating</h3>
+                        <p data-i18n="service_ac_desc">Climate control repair, refrigerant recharge, and heating system service.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">&#128722;</div>
-                        <h3>Tire Service</h3>
-                        <p>Tire replacement, rotation, balancing, and wheel alignment for a smooth ride.</p>
+                        <h3 data-i18n="service_tire_title">Tire Service</h3>
+                        <p data-i18n="service_tire_desc">Tire replacement, rotation, balancing, and wheel alignment for a smooth ride.</p>
                     </div>
                 </div>
             </div>
         </section>
-
+    
         <section id="about" class="about">
             <div class="container">
-                <h2>Why Choose Us</h2>
+                <h2 data-i18n="about_title">Why Choose Us</h2>
                 <div class="about-grid">
                     <div class="about-item">
-                        <h3>&#127942; 15+ Years Experience</h3>
-                        <p>Our certified mechanics bring over 15 years of hands-on experience with all makes and models.</p>
+                        <h3>&#127942; <span data-i18n="about_experience_title">15+ Years Experience</span></h3>
+                        <p data-i18n="about_experience_desc">Our certified mechanics bring over 15 years of hands-on experience with all makes and models.</p>
                     </div>
                     <div class="about-item">
-                        <h3>&#9989; Transparent Pricing</h3>
-                        <p>No hidden fees. We provide detailed estimates before any work begins.</p>
+                        <h3>&#9989; <span data-i18n="about_pricing_title">Transparent Pricing</span></h3>
+                        <p data-i18n="about_pricing_desc">No hidden fees. We provide detailed estimates before any work begins.</p>
                     </div>
                     <div class="about-item">
-                        <h3>&#128338; Quick Turnaround</h3>
-                        <p>We value your time. Most standard services are completed the same day.</p>
+                        <h3>&#128338; <span data-i18n="about_turnaround_title">Quick Turnaround</span></h3>
+                        <p data-i18n="about_turnaround_desc">We value your time. Most standard services are completed the same day.</p>
                     </div>
                     <div class="about-item">
-                        <h3>&#128170; Quality Parts</h3>
-                        <p>We use only OEM and high-quality aftermarket parts backed by warranty.</p>
+                        <h3>&#128170; <span data-i18n="about_parts_title">Quality Parts</span></h3>
+                        <p data-i18n="about_parts_desc">We use only OEM and high-quality aftermarket parts backed by warranty.</p>
                     </div>
                 </div>
             </div>
         </section>
-
+    
         <section id="contact" class="contact">
             <div class="container">
-                <h2>Get in Touch</h2>
+                <h2 data-i18n="contact_title">Get in Touch</h2>
                 <div class="contact-grid">
                     <div class="contact-info">
                         <div class="contact-item">
-                            <strong>&#128205; Address</strong>
-                            <p>ul. Mechanik&oacute;w 12, 50-200 Wroc&#322;aw, Poland</p>
+                            <strong>&#128205; <span data-i18n="contact_address">Address</span></strong>
+                            <p data-i18n="contact_address_value">ul. Mechanik&oacute;w 12, 50-200 Wroc&#322;aw, Poland</p>
                         </div>
                         <div class="contact-item">
-                            <strong>&#128222; Phone</strong>
+                            <strong>&#128222; <span data-i18n="contact_phone">Phone</span></strong>
                             <p>+48 71 123 45 67</p>
                         </div>
                         <div class="contact-item">
-                            <strong>&#128231; Email</strong>
+                            <strong>&#128231; <span data-i18n="contact_email">Email</span></strong>
                             <p>service@autopro-workshop.pl</p>
                         </div>
                         <div class="contact-item">
-                            <strong>&#128339; Hours</strong>
-                            <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
-                            <p>Saturday: 9:00 AM - 3:00 PM</p>
-                            <p>Sunday: Closed</p>
+                            <strong>&#128339; <span data-i18n="contact_hours">Hours</span></strong>
+                            <p data-i18n="contact_hours_mon_fri">Mon - Fri: 8:00 AM - 6:00 PM</p>
+                            <p data-i18n="contact_hours_sat">Saturday: 9:00 AM - 3:00 PM</p>
+                            <p data-i18n="contact_hours_sun">Sunday: Closed</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
+    
         <footer>
             <div class="container">
-                <p>&copy; 2026 AutoPro Workshop. All rights reserved.</p>
+                <p data-i18n="footer_copyright">&copy; 2026 AutoPro Workshop. All rights reserved.</p>
             </div>
         </footer>
-
+    
     </body>
     </html>
   style.css: |
@@ -138,20 +143,20 @@ data:
         padding: 0;
         box-sizing: border-box;
     }
-
+    
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: #333;
         line-height: 1.6;
     }
-
+    
     .container {
         max-width: 1100px;
         width: 100%;
         margin: 0 auto;
         padding: 0 20px;
     }
-
+    
     /* Navbar */
     .navbar {
         background: #1a1a2e;
@@ -160,7 +165,7 @@ data:
         top: 0;
         z-index: 100;
     }
-
+    
     .nav-container {
         max-width: 1100px;
         margin: 0 auto;
@@ -168,31 +173,68 @@ data:
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 20px;
     }
-
+    
     .logo {
         color: #e94560;
         font-size: 1.5em;
         font-weight: bold;
     }
-
+    
     .nav-links {
         list-style: none;
         display: flex;
         gap: 25px;
     }
-
+    
     .nav-links a {
         color: #eee;
         text-decoration: none;
         font-size: 1em;
         transition: color 0.3s;
     }
-
+    
     .nav-links a:hover {
         color: #e94560;
     }
-
+    
+    /* Language Switcher */
+    .lang-switcher {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+    
+    .lang-btn {
+        background: transparent;
+        border: 2px solid #555;
+        color: #eee;
+        padding: 6px 12px;
+        border-radius: 4px;
+        font-size: 0.9em;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .lang-btn:hover {
+        border-color: #e94560;
+        color: #e94560;
+    }
+    
+    .lang-btn.active {
+        background: #e94560;
+        border-color: #e94560;
+        color: #fff;
+    }
+    
+    .lang-btn:focus {
+        outline: 2px solid #e94560;
+        outline-offset: 2px;
+    }
+    
     /* Hero */
     .hero {
         background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
@@ -200,18 +242,18 @@ data:
         text-align: center;
         padding: 100px 20px;
     }
-
+    
     .hero h1 {
         font-size: 2.8em;
         margin-bottom: 15px;
     }
-
+    
     .hero p {
         font-size: 1.2em;
         color: #ccc;
         margin-bottom: 30px;
     }
-
+    
     .btn {
         display: inline-block;
         background: #e94560;
@@ -223,17 +265,17 @@ data:
         font-weight: bold;
         transition: background 0.3s;
     }
-
+    
     .btn:hover {
         background: #c73650;
     }
-
+    
     /* Services */
     .services {
         padding: 70px 0;
         background: #f8f9fa;
     }
-
+    
     .services h2,
     .about h2,
     .contact h2 {
@@ -242,13 +284,13 @@ data:
         margin-bottom: 40px;
         color: #1a1a2e;
     }
-
+    
     .services-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 25px;
     }
-
+    
     .service-card {
         background: #fff;
         border-radius: 8px;
@@ -257,95 +299,95 @@ data:
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         transition: transform 0.3s, box-shadow 0.3s;
     }
-
+    
     .service-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     }
-
+    
     .service-icon {
         font-size: 2.5em;
         margin-bottom: 15px;
     }
-
+    
     .service-card h3 {
         color: #1a1a2e;
         margin-bottom: 10px;
         font-size: 1.3em;
     }
-
+    
     .service-card p {
         color: #666;
         font-size: 0.95em;
     }
-
+    
     /* About */
     .about {
         padding: 70px 0;
         background: #fff;
     }
-
+    
     .about-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         gap: 25px;
     }
-
+    
     .about-item {
         background: #f8f9fa;
         border-left: 4px solid #e94560;
         padding: 25px;
         border-radius: 0 8px 8px 0;
     }
-
+    
     .about-item h3 {
         color: #1a1a2e;
         margin-bottom: 10px;
         font-size: 1.15em;
     }
-
+    
     .about-item p {
         color: #555;
         font-size: 0.95em;
     }
-
+    
     /* Contact */
     .contact {
         padding: 70px 0;
         background: #f8f9fa;
     }
-
+    
     .contact-grid {
         max-width: 600px;
         margin: 0 auto;
     }
-
+    
     .contact-info {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 25px;
     }
-
+    
     .contact-item {
         background: #fff;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
     }
-
+    
     .contact-item strong {
         display: block;
         color: #1a1a2e;
         margin-bottom: 8px;
         font-size: 1.05em;
     }
-
+    
     .contact-item p {
         color: #555;
         font-size: 0.95em;
         margin-bottom: 2px;
     }
-
+    
     /* Footer */
     footer {
         background: #1a1a2e;
@@ -353,18 +395,215 @@ data:
         text-align: center;
         padding: 25px 0;
     }
-
+    
     /* Responsive */
     @media (max-width: 768px) {
         .hero h1 {
             font-size: 2em;
         }
-
+    
         .nav-links {
             gap: 15px;
         }
-
+        
+        .nav-container {
+            flex-wrap: wrap;
+        }
+        
+        .lang-switcher {
+            order: 3;
+            width: 100%;
+            justify-content: center;
+            padding-top: 10px;
+        }
+    
         .contact-info {
             grid-template-columns: 1fr;
         }
     }
+  translations.js: |
+    // Translation data for PL/ENG language switcher
+    const translations = {
+        en: {
+            // Navigation
+            nav_home: "Home",
+            nav_services: "Services",
+            nav_about: "About",
+            nav_contact: "Contact",
+            
+            // Hero Section
+            hero_title: "Professional Car Service & Repair",
+            hero_subtitle: "Trusted by hundreds of drivers. We keep your car running at its best.",
+            hero_button: "Book an Appointment",
+            
+            // Services Section
+            services_title: "Our Services",
+            service_diagnostics_title: "Engine Diagnostics",
+            service_diagnostics_desc: "Advanced computer diagnostics to quickly identify and resolve engine issues.",
+            service_repairs_title: "General Repairs",
+            service_repairs_desc: "Brake service, suspension, exhaust systems, and complete mechanical repairs.",
+            service_oil_title: "Oil & Filter Change",
+            service_oil_desc: "Regular maintenance to extend your engine life and ensure peak performance.",
+            service_electrical_title: "Electrical Systems",
+            service_electrical_desc: "Battery checks, alternator repairs, wiring diagnostics, and lighting services.",
+            service_ac_title: "AC & Heating",
+            service_ac_desc: "Climate control repair, refrigerant recharge, and heating system service.",
+            service_tire_title: "Tire Service",
+            service_tire_desc: "Tire replacement, rotation, balancing, and wheel alignment for a smooth ride.",
+            
+            // About Section
+            about_title: "Why Choose Us",
+            about_experience_title: "15+ Years Experience",
+            about_experience_desc: "Our certified mechanics bring over 15 years of hands-on experience with all makes and models.",
+            about_pricing_title: "Transparent Pricing",
+            about_pricing_desc: "No hidden fees. We provide detailed estimates before any work begins.",
+            about_turnaround_title: "Quick Turnaround",
+            about_turnaround_desc: "We value your time. Most standard services are completed the same day.",
+            about_parts_title: "Quality Parts",
+            about_parts_desc: "We use only OEM and high-quality aftermarket parts backed by warranty.",
+            
+            // Contact Section
+            contact_title: "Get in Touch",
+            contact_address: "Address",
+            contact_address_value: "ul. Mechaników 12, 50-200 Wrocław, Poland",
+            contact_phone: "Phone",
+            contact_email: "Email",
+            contact_hours: "Hours",
+            contact_hours_mon_fri: "Mon - Fri: 8:00 AM - 6:00 PM",
+            contact_hours_sat: "Saturday: 9:00 AM - 3:00 PM",
+            contact_hours_sun: "Sunday: Closed",
+            
+            // Footer
+            footer_copyright: "© 2026 AutoPro Workshop. All rights reserved."
+        },
+        pl: {
+            // Navigation
+            nav_home: "Start",
+            nav_services: "Usługi",
+            nav_about: "O nas",
+            nav_contact: "Kontakt",
+            
+            // Hero Section
+            hero_title: "Profesjonalny Serwis i Naprawa Samochodów",
+            hero_subtitle: "Zaufany przez setki kierowców. Dbamy o to, aby Twój samochód działał jak najlepiej.",
+            hero_button: "Umów wizytę",
+            
+            // Services Section
+            services_title: "Nasze Usługi",
+            service_diagnostics_title: "Diagnostyka Silnika",
+            service_diagnostics_desc: "Zaawansowana diagnostyka komputerowa do szybkiego wykrywania i rozwiązywania problemów z silnikiem.",
+            service_repairs_title: "Naprawy Ogólne",
+            service_repairs_desc: "Serwis hamulców, zawieszenia, układu wydechowego i kompleksowe naprawy mechaniczne.",
+            service_oil_title: "Wymiana Oleju i Filtrów",
+            service_oil_desc: "Regularna konserwacja wydłużająca żywotność silnika i zapewniająca najlepszą wydajność.",
+            service_electrical_title: "Układy Elektryczne",
+            service_electrical_desc: "Kontrola akumulatora, naprawy alternatora, diagnostyka okablowania i usługi oświetlenia.",
+            service_ac_title: "Klimatyzacja i Ogrzewanie",
+            service_ac_desc: "Naprawa klimatyzacji, uzupełnianie czynnika chłodniczego i serwis układu ogrzewania.",
+            service_tire_title: "Serwis Opon",
+            service_tire_desc: "Wymiana opon, rotacja, wyważanie i geometria kół dla płynnej jazdy.",
+            
+            // About Section
+            about_title: "Dlaczego My",
+            about_experience_title: "Ponad 15 Lat Doświadczenia",
+            about_experience_desc: "Nasi certyfikowani mechanicy mają ponad 15 lat praktycznego doświadczenia ze wszystkimi markami i modelami.",
+            about_pricing_title: "Przejrzyste Ceny",
+            about_pricing_desc: "Żadnych ukrytych opłat. Przed rozpoczęciem prac przedstawiamy szczegółową wycenę.",
+            about_turnaround_title: "Szybka Realizacja",
+            about_turnaround_desc: "Cenimy Twój czas. Większość standardowych usług wykonujemy tego samego dnia.",
+            about_parts_title: "Części Wysokiej Jakości",
+            about_parts_desc: "Używamy wyłącznie części OEM i wysokiej jakości części zamiennych objętych gwarancją.",
+            
+            // Contact Section
+            contact_title: "Skontaktuj się z nami",
+            contact_address: "Adres",
+            contact_address_value: "ul. Mechaników 12, 50-200 Wrocław, Polska",
+            contact_phone: "Telefon",
+            contact_email: "E-mail",
+            contact_hours: "Godziny otwarcia",
+            contact_hours_mon_fri: "Pon - Pt: 8:00 - 18:00",
+            contact_hours_sat: "Sobota: 9:00 - 15:00",
+            contact_hours_sun: "Niedziela: Nieczynne",
+            
+            // Footer
+            footer_copyright: "© 2026 AutoPro Workshop. Wszelkie prawa zastrzeżone."
+        }
+    };
+    
+    // Language switcher functionality
+    class LanguageSwitcher {
+        constructor() {
+            this.currentLang = localStorage.getItem('language') || 'en';
+            this.init();
+        }
+    
+        init() {
+            // Apply saved language on page load
+            this.applyLanguage(this.currentLang);
+            
+            // Update HTML lang attribute
+            document.documentElement.lang = this.currentLang;
+        }
+    
+        switchLanguage(lang) {
+            if (lang !== this.currentLang && (lang === 'en' || lang === 'pl')) {
+                this.currentLang = lang;
+                localStorage.setItem('language', lang);
+                this.applyLanguage(lang);
+                document.documentElement.lang = lang;
+                
+                // Update active state of language buttons
+                this.updateButtonStates();
+            }
+        }
+    
+        applyLanguage(lang) {
+            const t = translations[lang];
+            
+            // Apply all translations using data-i18n attributes
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (t[key]) {
+                    element.textContent = t[key];
+                }
+            });
+            
+            // Update page title
+            const title = lang === 'pl' 
+                ? 'AutoPro Workshop - Profesjonalny Serwis i Naprawa Samochodów'
+                : 'AutoPro Workshop - Professional Car Service & Repair';
+            document.title = title;
+        }
+    
+        updateButtonStates() {
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                if (btn.getAttribute('data-lang') === this.currentLang) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+        }
+    
+        getCurrentLanguage() {
+            return this.currentLang;
+        }
+    }
+    
+    // Initialize language switcher when DOM is ready
+    let langSwitcher;
+    document.addEventListener('DOMContentLoaded', function() {
+        langSwitcher = new LanguageSwitcher();
+        
+        // Add click handlers to language buttons
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const lang = this.getAttribute('data-lang');
+                langSwitcher.switchLanguage(lang);
+            });
+        });
+        
+        // Set initial active state
+        langSwitcher.updateButtonStates();
+    });
