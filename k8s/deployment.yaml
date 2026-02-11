@@ -33,6 +33,9 @@ spec:
         - name: website-content
           mountPath: /usr/share/nginx/html/style.css
           subPath: style.css
+        - name: website-content
+          mountPath: /usr/share/nginx/html/translations.js
+          subPath: translations.js
       volumes:
       - name: website-content
         configMap:
