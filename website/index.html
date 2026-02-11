@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoPro Workshop - Professional Car Service &amp; Repair</title>
     <link rel="stylesheet" href="style.css">
+    <script src="translations.js"></script>
 </head>
 <body>
 
@@ -12,55 +13,59 @@
         <div class="nav-container">
             <div class="logo">&#128295; AutoPro Workshop</div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
             </ul>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" aria-label="Switch to English">ENG</button>
+                <button class="lang-btn" data-lang="pl" aria-label="Switch to Polish">PL</button>
+            </div>
         </div>
     </nav>
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Professional Car Service &amp; Repair</h1>
-            <p>Trusted by hundreds of drivers. We keep your car running at its best.</p>
-            <a href="#contact" class="btn">Book an Appointment</a>
+            <h1 data-i18n="hero_title">Professional Car Service &amp; Repair</h1>
+            <p data-i18n="hero_subtitle">Trusted by hundreds of drivers. We keep your car running at its best.</p>
+            <a href="#contact" class="btn" data-i18n="hero_button">Book an Appointment</a>
         </div>
     </section>
 
     <section id="services" class="services">
         <div class="container">
-            <h2>Our Services</h2>
+            <h2 data-i18n="services_title">Our Services</h2>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">&#128736;</div>
-                    <h3>Engine Diagnostics</h3>
-                    <p>Advanced computer diagnostics to quickly identify and resolve engine issues.</p>
+                    <h3 data-i18n="service_diagnostics_title">Engine Diagnostics</h3>
+                    <p data-i18n="service_diagnostics_desc">Advanced computer diagnostics to quickly identify and resolve engine issues.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">&#9881;</div>
-                    <h3>General Repairs</h3>
-                    <p>Brake service, suspension, exhaust systems, and complete mechanical repairs.</p>
+                    <h3 data-i18n="service_repairs_title">General Repairs</h3>
+                    <p data-i18n="service_repairs_desc">Brake service, suspension, exhaust systems, and complete mechanical repairs.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">&#128663;</div>
-                    <h3>Oil &amp; Filter Change</h3>
-                    <p>Regular maintenance to extend your engine life and ensure peak performance.</p>
+                    <h3 data-i18n="service_oil_title">Oil &amp; Filter Change</h3>
+                    <p data-i18n="service_oil_desc">Regular maintenance to extend your engine life and ensure peak performance.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">&#9889;</div>
-                    <h3>Electrical Systems</h3>
-                    <p>Battery checks, alternator repairs, wiring diagnostics, and lighting services.</p>
+                    <h3 data-i18n="service_electrical_title">Electrical Systems</h3>
+                    <p data-i18n="service_electrical_desc">Battery checks, alternator repairs, wiring diagnostics, and lighting services.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">&#10052;</div>
-                    <h3>AC &amp; Heating</h3>
-                    <p>Climate control repair, refrigerant recharge, and heating system service.</p>
+                    <h3 data-i18n="service_ac_title">AC &amp; Heating</h3>
+                    <p data-i18n="service_ac_desc">Climate control repair, refrigerant recharge, and heating system service.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">&#128722;</div>
-                    <h3>Tire Service</h3>
-                    <p>Tire replacement, rotation, balancing, and wheel alignment for a smooth ride.</p>
+                    <h3 data-i18n="service_tire_title">Tire Service</h3>
+                    <p data-i18n="service_tire_desc">Tire replacement, rotation, balancing, and wheel alignment for a smooth ride.</p>
                 </div>
             </div>
         </div>
@@ -68,23 +73,23 @@
 
     <section id="about" class="about">
         <div class="container">
-            <h2>Why Choose Us</h2>
+            <h2 data-i18n="about_title">Why Choose Us</h2>
             <div class="about-grid">
                 <div class="about-item">
-                    <h3>&#127942; 15+ Years Experience</h3>
-                    <p>Our certified mechanics bring over 15 years of hands-on experience with all makes and models.</p>
+                    <h3>&#127942; <span data-i18n="about_experience_title">15+ Years Experience</span></h3>
+                    <p data-i18n="about_experience_desc">Our certified mechanics bring over 15 years of hands-on experience with all makes and models.</p>
                 </div>
                 <div class="about-item">
-                    <h3>&#9989; Transparent Pricing</h3>
-                    <p>No hidden fees. We provide detailed estimates before any work begins.</p>
+                    <h3>&#9989; <span data-i18n="about_pricing_title">Transparent Pricing</span></h3>
+                    <p data-i18n="about_pricing_desc">No hidden fees. We provide detailed estimates before any work begins.</p>
                 </div>
                 <div class="about-item">
-                    <h3>&#128338; Quick Turnaround</h3>
-                    <p>We value your time. Most standard services are completed the same day.</p>
+                    <h3>&#128338; <span data-i18n="about_turnaround_title">Quick Turnaround</span></h3>
+                    <p data-i18n="about_turnaround_desc">We value your time. Most standard services are completed the same day.</p>
                 </div>
                 <div class="about-item">
-                    <h3>&#128170; Quality Parts</h3>
-                    <p>We use only OEM and high-quality aftermarket parts backed by warranty.</p>
+                    <h3>&#128170; <span data-i18n="about_parts_title">Quality Parts</span></h3>
+                    <p data-i18n="about_parts_desc">We use only OEM and high-quality aftermarket parts backed by warranty.</p>
                 </div>
             </div>
         </div>
@@ -92,26 +97,26 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Get in Touch</h2>
+            <h2 data-i18n="contact_title">Get in Touch</h2>
             <div class="contact-grid">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <strong>&#128205; Address</strong>
-                        <p>ul. Mechanik&oacute;w 12, 50-200 Wroc&#322;aw, Poland</p>
+                        <strong>&#128205; <span data-i18n="contact_address">Address</span></strong>
+                        <p data-i18n="contact_address_value">ul. Mechanik&oacute;w 12, 50-200 Wroc&#322;aw, Poland</p>
                     </div>
                     <div class="contact-item">
-                        <strong>&#128222; Phone</strong>
+                        <strong>&#128222; <span data-i18n="contact_phone">Phone</span></strong>
                         <p>+48 71 123 45 67</p>
                     </div>
                     <div class="contact-item">
-                        <strong>&#128231; Email</strong>
+                        <strong>&#128231; <span data-i18n="contact_email">Email</span></strong>
                         <p>service@autopro-workshop.pl</p>
                     </div>
                     <div class="contact-item">
-                        <strong>&#128339; Hours</strong>
-                        <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
-                        <p>Saturday: 9:00 AM - 3:00 PM</p>
-                        <p>Sunday: Closed</p>
+                        <strong>&#128339; <span data-i18n="contact_hours">Hours</span></strong>
+                        <p data-i18n="contact_hours_mon_fri">Mon - Fri: 8:00 AM - 6:00 PM</p>
+                        <p data-i18n="contact_hours_sat">Saturday: 9:00 AM - 3:00 PM</p>
+                        <p data-i18n="contact_hours_sun">Sunday: Closed</p>
                     </div>
                 </div>
             </div>
@@ -120,7 +125,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 AutoPro Workshop. All rights reserved.</p>
+            <p data-i18n="footer_copyright">&copy; 2026 AutoPro Workshop. All rights reserved.</p>
         </div>
     </footer>
 

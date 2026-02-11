@@ -33,6 +33,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 .logo {
@@ -56,6 +57,42 @@ body {
 
 .nav-links a:hover {
     color: #e94560;
+}
+
+/* Language Switcher */
+.lang-switcher {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 2px solid #555;
+    color: #eee;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lang-btn:hover {
+    border-color: #e94560;
+    color: #e94560;
+}
+
+.lang-btn.active {
+    background: #e94560;
+    border-color: #e94560;
+    color: #fff;
+}
+
+.lang-btn:focus {
+    outline: 2px solid #e94560;
+    outline-offset: 2px;
 }
 
 /* Hero */
@@ -227,6 +264,17 @@ footer {
 
     .nav-links {
         gap: 15px;
+    }
+    
+    .nav-container {
+        flex-wrap: wrap;
+    }
+    
+    .lang-switcher {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        padding-top: 10px;
     }
 
     .contact-info {
